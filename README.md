@@ -1,12 +1,108 @@
-# React + Vite
+# MiniChrome – Chrome-Style Browser UI in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive Chrome-like browser UI built with **Vite + React**, featuring:
+- Chrome-style tab bar with active/inactive tabs
+- Address bar with navigation controls
+- Search box with Google-style icons
+- Shortcut tiles like Chrome’s new tab page
+- Window control buttons (Minimize, Maximize, Close)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 🗂 Tabs
+- Chrome-style rounded tab design
+- Active tab seamlessly connects with address bar
+- Click to switch between tabs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔍 Address Bar
+- **Back**, **Forward**, **Refresh** icons
+- Lock icon for secure connection indicator
+- Bookmark (star) and vertical menu icons
+
+### 🔎 Search Box
+- Search icon (left)
+- Microphone and Google Lens icons (right)
+- Styled like Google’s homepage search
+
+### ⏱ Shortcuts
+- Demo shortcut tiles below the search box
+- Hover animation for better UI feel
+
+### 🖥 Window Controls
+- Minimize, Maximize, and Close buttons (Windows-style icons)
+- Styled for a realistic browser look
+
+---
+
+## 📦 Folder Structure
+
+```
+src/
+│
+├── components/
+│   ├── AddressBar.jsx
+│   ├── BrowserWindow.jsx
+│   ├── IconButton.jsx
+│   ├── SearchBoxWithShortcuts.jsx
+│   ├── Tab.jsx
+│   ├── TabBar.jsx
+│   ├── WindowControls.jsx
+│
+├── App.jsx
+├── main.jsx
+├── styles.css
+```
+
+---
+
+## 🛠 Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/minichrome.git
+   cd minichrome
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🌐 Deployment
+
+### **Deploy to Netlify**
+1. Run:
+   ```bash
+   npm run build
+   ```
+2. Go to [Netlify Drop](https://app.netlify.com/drop)
+3. Drag and drop the `dist` folder
+4. Get your live URL instantly
+5. live url:https://cute-marigold-da014b.netlify.app/
+
+---
+
+
+## 📜 License
+This project is licensed under the MIT License.  
+You may use and modify it for personal or commercial projects.
+
+---
+
+## 🙌 Credits
+- Built with [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- Icons from [React Icons](https://react-icons.github.io/react-icons/)
